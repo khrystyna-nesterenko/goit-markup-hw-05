@@ -517,13 +517,40 @@ img {
 .btn-modal-close {
         width: 24px;
         height: 24px;
-        fill: #e7e9fc;
+        background-color: #e7e9fc;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        margin-bottom: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal-close:hover {
+        fill: #fff;
+        background-color: #404bbf;
+}
+
+.modal-name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        margin-bottom: 16px;
 }
 
 .form-field {
         border: 1px solid rgba(46, 47, 66, 0.4);
         border-radius: 4px;
         width: 100%;
+}
+
+.form-field {
+        margin-bottom: 8px;
 }
