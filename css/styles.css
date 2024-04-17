@@ -562,7 +562,7 @@ img {
         visibility: hidden;
         pointer-events: none;
         position: none;
-        transform: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -596,6 +596,10 @@ img {
         top: 24px;
         right: 24px;
         padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
@@ -627,11 +631,12 @@ img {
 
 .form-label {
         font-size: 12px;
-        line-height: 1.16;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
         margin-bottom: 4px;
         margin-left: auto;
+        display: block;
 }
 
 .input-field {
@@ -680,6 +685,10 @@ img {
         resize: none;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: rgba(46, 47, 66, 0.4);
 }
 
 .textarea-field:active,
@@ -700,7 +709,7 @@ img {
 
 .terms-label {
         font-size: 12px;
-        line-height: 1.16;
+        line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
         display: flex;
@@ -714,7 +723,7 @@ img {
         border: 1px solid rgba(46, 47, 66, 0.4);
         display: inline-block;
         margin-right: 8px;
-        display: flex;
+        display: inline-flex;
         justify-content: center;
         align-items: center;
         fill: transparent;
@@ -735,21 +744,16 @@ img {
         color: #4d5ae5;
 }
 
-.container-btn-submit {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-}
-
 .btn-submit-form {
+        display: block;
+        margin: 0 auto;
         border-radius: 4px;
         padding: 16px 32px;
-        width: 169px;
+        min-width: 169px;
         height: 56px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         background: #4d5ae5;
+        font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
