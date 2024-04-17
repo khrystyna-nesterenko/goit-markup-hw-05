@@ -515,6 +515,7 @@ img {
         font-size: 12px;
         line-height: 2;
         letter-spacing: 0.04em;
+        outline: none;
         color: #fff;
 }
 
@@ -651,7 +652,7 @@ img {
         height: 40px;
         background-color: transparent;
         padding-left: 38px;
-        outline: transparent;
+        outline: none;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -717,11 +718,9 @@ img {
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-        display: flex;
-        align-items: center;
 }
 
-.terms-label span {
+.terms-label .imitated-check {
         width: 16px;
         height: 16px;
         border-radius: 2px;
@@ -736,7 +735,7 @@ img {
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms-box:checked + .terms-label span {
+.terms-box:checked + .terms-label .imitated-check {
         background-color: #404bbf;
         border: none;
         fill: #f4f4fd;
